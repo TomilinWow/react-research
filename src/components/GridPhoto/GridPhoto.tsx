@@ -23,7 +23,7 @@ export const GridPhoto = () => {
 
   return (
     <Layout>
-      <div className="grid grid-cols-2 gap-4 ml-2 mr-2">
+      <div id="photos" className="grid grid-cols-2 gap-4 ml-2 mr-2">
         {Array.isArray(photos) && photos?.map((photo) => {
           return <PhotoCard {...photo} key={photo.id} />
         })}

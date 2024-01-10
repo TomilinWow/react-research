@@ -28,7 +28,7 @@ export const Photo = () => {
         <div className="flex justify-center mt-4">
           <span className="rounded-md p-1 font-bold text-gray-900">{photo?.title}</span>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center" id={'real-photo'}>
           <img width={300} height={300} src={photo?.url}/>
         </div>
       </div>

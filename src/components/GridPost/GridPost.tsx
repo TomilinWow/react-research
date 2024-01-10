@@ -24,7 +24,7 @@ export const GridPost = () => {
 
   return (
     <Layout>
-      <div className="grid grid-cols-2 gap-4 ml-4 mr-4">
+      <div id={'posts'} className="grid grid-cols-2 gap-4 ml-4 mr-4">
         {posts?.map((post) => {
           return <PostCard {...post} key={post.id} />
         })}

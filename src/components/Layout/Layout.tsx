@@ -9,13 +9,13 @@ export const Layout: FC<ILayout> = ({children}) => {
     <main className="flex h-screen flex-col items-center overflow-hidden bg-blue-200 from-slate-300 via-slate-50 to-slate-300">
       <nav className="flex h-10 w-full shrink-0 grow-0 items-center border-b border-slate-600 bg-blue-500">
         <div className="flex w-full gap-4 p-2 font-semibold md:max-w-2xl text-white">
-          <Link to="/">
+          <Link id="home-link" to="/">
             <span>Home</span>
           </Link>
-          <Link to="/post">
+          <Link id="post-link" to="/post">
             <span>Posts</span>
           </Link>
-          <Link to="/photo">
+          <Link id="photo-link" to="/photo">
             <span>Photos</span>
           </Link>
         </div>
